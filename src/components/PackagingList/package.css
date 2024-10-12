@@ -1,0 +1,24 @@
+.package{
+    height: 40vh;
+    padding: 50px;
+    background-color: #4c3423;
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    gap: 40px;
+}
+@media(max-width:540px){
+    .package{
+        padding: 20px;
+        min-height:45vh;
+        max-height: fit-content;
+        overflow: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width:767px) and (max-width:1025px){
+ .package{
+    height: 50vh;
+ }
+}

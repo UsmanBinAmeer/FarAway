@@ -1,0 +1,148 @@
+.form {
+    height: 15vh;
+    background-color: #df6b1b;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.emoji {
+    height: 25px;
+    width: 25px;
+
+}
+
+.select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    padding-inline: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde7aa;
+    color: black;
+    border-radius: 25px;
+    height: 50px;
+}
+
+.select:focus {
+    outline: none;
+    border: none;
+
+}
+
+.inputs {
+    width: 30%;
+    border-radius: 25px;
+    background-color: #fde7aa;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-inline: 10px;
+
+}
+
+.inputs::placeholder {
+    font-size: 13px;
+    color: rgba(44, 43, 43, 0.856);
+    font-weight: 600;
+}
+
+.inputs:focus {
+    border: none;
+    outline: none;
+}
+
+.option {
+    /* padding: 10px; */
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.para {
+    display: flex;
+    align-items: center;
+    color: #4c3423;
+    font-size: 20px;
+}
+
+.para span {
+    margin-inline: 10px;
+}
+
+.btn {
+    height: 50px;
+    width: 10%;
+    background-color: #fde7aa;
+    border-radius: 25px;
+    font-size: 16px;
+    color: rgba(44, 43, 43, 0.856);
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 50%;
+}
+
+.btn:active {
+    opacity: 100%;
+}
+
+@media(max-width:540px) {
+    .form {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding-block: 15px;
+        width: 100%;
+    }
+
+    .inputs {
+        width: 85%;
+    }
+    .img {
+        height: 53%;
+        width: 70px;
+    }
+
+    .para {
+        display: none;
+    }
+
+    .btn {
+        width: 50%;
+    }
+    .select {
+        outline: none;
+        border: none;
+        padding: 10px;
+        /* padding-inline: 20px; */
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fde7aa;
+        color: black;
+        border-radius: 5px;
+        height: 50px;
+        /* WIDTH: 20%; */
+    }
+}
+@media (min-width:767px) and (max-width:1025px){
+    .form{
+        height: auto;
+        padding-block: 30px;
+    }
+ .para{
+    font-size: 15px;
+ }
+}

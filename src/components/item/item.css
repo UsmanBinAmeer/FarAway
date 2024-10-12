@@ -1,0 +1,48 @@
+.item{
+ display: flex;   
+ gap: 20px;
+ align-items: center;
+ padding: 20px;
+ font-size: 20px;
+}
+.itemName{
+    color: #fde7aa;
+}
+.itemBtn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(185, 29, 29);
+    font-size: 20px;
+    font-weight: bold;
+    padding-inline: 5px;
+    border-radius: 3px;
+}
+.itemBtn:hover{
+    cursor: pointer;
+    background-color:rgb(185, 29, 29) ;
+    color: white;
+
+}
+.itemBtn:active{
+    color: white;
+    background-color:#fde7aa ;
+}
+.checBox{
+    /* padding: 10px; */
+    height: 20px;
+    width: 20px;
+    outline: none;
+    border: none;
+}
+@media(max-width:540px){
+    .item-container{
+        width: 100%;
+        display: flex;
+height: fit-content;
+    }
+    .item{
+        width: 100%;
+        justify-content: space-between;
+    }
+}

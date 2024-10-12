@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+.logo {
+    background-color: #f19720;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    gap: 60PX;
+    align-items: center;
+    font-family: "Jacques Francois Shadow", serif;
+}
+
+.head h1 {
+    font-size: clamp(50px, 3vw, 60px);
+}
+
+.img {
+    height: 100%;
+    width: 200px;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width:540px) {
+    .logo {
+        height: 20vh;
+        gap: 30px;
+    }
+
+    .head h1 {
+        font-size: x-large;
+    }
+
+    .img {
+        height: 80%;
+        /* width: 50px; */
+    }
+}
+
+@media (min-width:767px) and (max-width:1025px){
+    .img {
+        height: 52%;
+        width: 152px;
+    }
+    .head h1{
+        font-size:2.8rem;
+    }
+}
